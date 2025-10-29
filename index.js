@@ -1,4 +1,5 @@
 
+
 //Deklarera variabel
 let myVariable = "hej";
 const myConstant = "då";
@@ -54,7 +55,8 @@ let person = {
 
 let groceryList = ["Banan","Mango","Tvättmedel","Tvål"];
 
-// console.log(groceryList)
+let aName = "Brandon";
+// console.log(aName.length); //Property === key:value i ett objekt
 
 // console.log('Jag behöver köpa ' + groceryList[3]);
 
@@ -65,15 +67,34 @@ function greeting(){
     console.log("Hej och välkommen!");
 }
 
-greeting();
-greeting();
-greeting();
+// greeting();
 
+//Metod - Funktion i ett objekt
 let animal = {
     type:"Horse",
     sound: function () {
         console.log("Neeiighhh!")
     }
 }
+//Anropa sound-metoden i animal
+// animal.sound()
 
-animal.sound()
+
+//Funktioner med input/parametrar
+
+function greetMe(namn,age) {
+    return("Hej och välkommen, " + namn + " din snygga " + age + "-åring!");
+}
+
+function addTwo(num){
+    return num +2;
+}
+
+let result = addTwo(10);
+
+console.log(result);
+
+//vi kör funktionen med två argument
+
+let myGreeting = greetMe("Brandon",88);
+console.log(myGreeting);
