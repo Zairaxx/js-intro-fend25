@@ -5,9 +5,9 @@ const myConstant = "då";
 
 
 myVariable = "halloj!";
-myConstant = "bye bye!"; //Kastar ett error
+// myConstant = "bye bye!"; //Kastar ett error
 
-console.log(myConstant);
+// console.log(myConstant);
 
 //Definiera en variabel
 myVariable = "Value";
@@ -59,4 +59,21 @@ let groceryList = ["Banan","Mango","Tvättmedel","Tvål"];
 // console.log('Jag behöver köpa ' + groceryList[3]);
 
 
-//Funktioner
+//Funktioner & Metoder
+
+function greeting(){
+    console.log("Hej och välkommen!");
+}
+
+greeting();
+greeting();
+greeting();
+
+let animal = {
+    type:"Horse",
+    sound: function () {
+        console.log("Neeiighhh!")
+    }
+}
+
+animal.sound()
