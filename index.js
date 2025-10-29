@@ -1,62 +1,54 @@
+//Uppgift 1
 
-//Deklarera variabel
-let myVariable = "hej";
-const myConstant = "då";
+let myName = "Brandon";
+let age = 31;
+let favoriteDestination = "Gotland";
+let siblings = 4;
+let hasPets = true;
+
+// console.log("Hej! Jag heter " + myName + ". Jag är " + age + " år gammal. Jag tycker om att resa till " + favoriteDestination + ", och har " + siblings + " syskon." + "Har jag husdjur? Svar: " + hasPets);
+
+//Uppgift 2
+
+let favoriteFruits = ["Banan","Kiwi","Passionfrukt", "Äpple", "Apelsin"];
+
+favoriteFruits.push("Mango");
+
+// console.log(favoriteFruits[0], favoriteFruits[3]);
+console.log(favoriteFruits);
+
+//Uppgift 3
+
+let favoriteMovies = ["Insidious", "Blue", "Harry Potter", "Gladiator", "Matrix", "Sagan om ringen"]
+
+let lastMovie = favoriteMovies.pop();
+
+// console.log("Sista filmen: " + lastMovie);
+// console.log(favoriteMovies[favoriteMovies.length-1]);
+// console.log(favoriteMovies[favoriteMovies.length-2]);
 
 
-myVariable = "halloj!";
-myConstant = "bye bye!"; //Kastar ett error
+//Uppgift 4
 
-console.log(myConstant);
-
-//Definiera en variabel
-myVariable = "Value";
-
-//Data types
-
-//String
-let myName = "Hej"
-
-//Number - (Integer, bigInt, float, double)
-let myAge = 31;
-
-//Boolean
-let isFrontendDeveloper = true;
-
-//Undefined
-
-let myUndefined;
-
-// null
-
-let myIceCream = null;
-
-//Objekt 
-
-let person = {
-    //key : value
-    name:"Brandon",
-    age:31,
-    isFrontendDeveloper:true,
-    favoriteFoods: ["Tacos","Pasta"],
-    address: {
-        postCode:12184,
-        street: "Ringvägen"
+let pet = {
+    name: "Kobe",
+    type: "Dog",
+    age: 3,
+    breed: "poodle",
+    isHerbivore : true,
+    sound: function (){
+        console.log("Woof woof!");
+    },
+    "Best Friend": {
+        name: "Lola",
+        type: "Cat",
+        age: 7,
+        breed: "bondkatt",
+        isHerbivore : false,
     }
 }
 
-// console.log(person.favoriteFoods[0])
+pet.sound();
 
 
-// console.log("Hej " + person.name);
-
-// Array
-
-let groceryList = ["Banan","Mango","Tvättmedel","Tvål"];
-
-// console.log(groceryList)
-
-// console.log('Jag behöver köpa ' + groceryList[3]);
-
-
-//Funktioner
+console.log(pet["Best Friend"].name)
